@@ -1,47 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-with", initial scale="1.0">
-	<title>Jack Tabron's Blog</title>
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Helvetica;
+  padding: 20px;
+  background: #f0bf0d;;
+}
+
+/* Header/Blog Title */
+.header {
+	font-family: Helvetica;
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  background: #f0bf0d;
+}
+
+.subheading {
+	font-family: Helvetica;
+	font-weight: 300;
+  padding: 40px;
+  font-size: 15px;
+	text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+	text-align: center;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.container {
+  width: 150px;
+  height: 100px;
+  background-image: src="images/tile1.gif" alt="my blog posts"
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #f0bf0d;
+   padding: 20px;
+   margin-top: 20px;
+	 font-family: monospace;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
 </head>
 <body>
-	<nav>
-		<div> class="menu">
-			<a href="#">Menu
-			</div>
-	</nav>
 
-						<div class ="container">
+<div class="header">
+  <h2>JACK'S BLOG.</h2>
+</div>
 
-								<a href="#" class="logo">Jack Tabrons Blog</a>
+<div class="subheading">
+  <h2>"A LEARNING JOURNEY"</h2>
+</div>
 
-								<div class="content">
-									<div class="left-side">
-										<div class="showcase">
-												<p>text filler for forthcoming content</p>
-												<h4>the blog</h4>
-										</div>
-										<div class="bottom-left">
-											<div> class="card">
-												<img src="images/test.png">
-												<div class="blog-caption">
-													<p class="category">TECH</p>
-													<p class="title">What are the best practices associated with using classes vs. ids?</p>
-												</div>
-												<div> class="date-engages">
-													<p class="date">April 21, 2022</p>
-													<div class="engages">
-														
-													</div>
-										</div>
-									</div>
-								</div>
-								<div class="right-side"></div>
-							</div>
-						</div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>A LITTLE ABOUT MYSELF</h2>
+      <h5>APRIL 22, 2022<br> </h5>
+			<img src="images/DP-N.png" alt="Display Picture" style="width:350px;height:350px;">
+      <p style="font-size: "medium"><br> 
+				<br> 
+				Hello! I'm Jack and I'm currently living in Auckland,<br> 
+				a couple of values I believe in; is always being honest<br> 
+				(sometimes I need to know when to turn on the filter actually 🙃)<br>  
+				as well as being open and direct when it comes to communication <br> 
+				especially in a learning environment. Additionally I've always<br>  
+				identified with the phrase 'practice makes perfect'<br> 
+				Rome wasn't built in a day and I believe that anyone willing to put in the<br>
+				required time and effort is capable of mastering their chosen craft.<br> 
+				I'm attending Dev Academy because my last career choice wasn't offering me<br>  
+				the opportunities for progression that I was looking for.<br> 
+				I used to work with a lot of data science and opted to learn Python during lockdown,<br>  
+				with a love of problem solving and some research I ended up here!</p>
+    </div>
+		<div class="container"></div>​
+		<div class="card">
+			<img src="images/tile1.gif" alt="my blog posts" style="width:1000px;height:500px;">
+			<br>
+			<br>
+			<br>
+			<h2>CHECK OUT SOME OF MY BLOG POSTS BELOW</h2>
+      <p style="font-size: "medium"> - What is the difference between Margin, Border, and Padding?<br>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>CONTACT ME</h2>
+			<img src="images/contact.png" alt="my blog" style="width:60px;height:55px;">
+      <p>jacktabronda@gmail.com</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div style="font-size: "medium"> - What is the difference between Margin, Border, and Padding?<br></div><br>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
 </body>
-</html>
+</html>S

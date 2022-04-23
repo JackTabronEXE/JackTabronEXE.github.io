@@ -1,28 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Stories and Legends (PAGE title) </title>
-    <meta charset="UTF-8">
-    
-<link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
-    
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-    </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-    </p>
-    
-    <!-- this is a comment. -->
-  
-  </body>
-</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Helvetica;
+  padding: 20px;
+  background: #f0bf0d;;
+}
+
+/* Header/Blog Title */
+.header {
+	font-family: Helvetica;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background: #f0bf0d;
+}
+
+.subheading {
+	font-family: Helvetica;
+	font-weight: 300;
+  padding: 40px;
+  font-size: 15px;
+	text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+	text-align: center;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.container {
+  width: 150px;
+  height: 100px;
+  background-image: src="images/tile1.gif" alt="my blog posts"
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #f0bf0d;
+   padding: 20px;
+   margin-top: 20px;
+	 font-family: monospace;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2> WHAT IS THE DIFFERENCE BETWEEN<br> MARGIN, BORDER AND PADDING?</h2>
+</div>
+
+<div class="subheading">
+  <h2>APRIL 22, 2022</h2>
+</div>
+
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+			<img src="figures/fig6.png" alt="Figure 1" style="width: 700px;height:550px;">
+		</div>
+      <p style="font-size: "medium"><br> 
+				To begin with let's assume that you are the a block of content or element within a HTML page<br>
+				<br>
+				The clothes you wear can be equated to <b>border</b> in CSS<br>
+				<br>
+				The space between your body and your clothes can be equated to <b>padding</b>.<br> 
+				<br>
+				Say you are inside a confined box. So the space between your clothes and the limits of the box is <b>margin..</b><br>
+				<br>
+				They are all used to create gaps around elements, but they differ in their method of creating that gap. Margin accommodates the gap <br>
+				by pushing adjacent elements away from it, while Padding accommodates the gap by either growing its own size or by shrinking the size of content inside it.)<br> 
+				<br> 
+				 <br>
+				 <br>
+				 <br>
+				 <h2>USE PADDING WHEN:</h2>
+				 You don’t want your content to touch the edges of the container, or also if You want to increase the size of the element. Another Example<br>
+				 to use padding could be when you need to increase the size of an element. (e.g a button)<br>
+				 <br>				 <br>
+				 <img src="figures/fig3.jpg" alt="Figure 1" style="width: 500px;height:200px;">
+				 <br>
+				 <br>
+				 <br>
+				 <h2>USE MARGIN WHEN:</h2>
+				 <br>
+				 You need to create some extra space around an element, or you don’t want the specified element to be touching other elements around it:<br>
+				 <br>
+				 <img src="figures/fig4.jpg" alt="Figure 1" style="width: 600px;height:200px;"><br>
+				 <br>
+				
+				 <h2>USE BORDER WHEN:</h2>
+				 <br>
+				 When you need to emphsise and element, the border is between the margin and padding of an object, it's the strip that goes around your <br>
+				 element of the content:<br>
+				 <br>
+				 <img src="figures/fig1.png" alt="Figure 1" style="width: 600px;height:600px;"><br>
+				 <br>
+
+
+    </div>
