@@ -1,0 +1,161 @@
+<<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* Add a gray background color with some padding */
+	body {
+		font-family: monospace;
+		padding: 20px;
+		background: #f0bf0d;;
+	}
+	
+	/* Header/Blog Title */
+	.header {
+		font-family: Helvetica;
+		padding: 10px;
+		font-size: 20px;
+		text-align: center;
+		background: #f0bf0d;
+	}
+	
+	.subheading {
+		font-family: Helvetica;
+		font-weight: 300;
+		padding: 40px;
+		font-size: 15px;
+		text-align: center;
+	}
+	
+	/* Create two unequal columns that floats next to each other */
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+	}
+	
+	.container {
+		width: 150px;
+		height: 100px;
+		background-image: src="images/tile1.gif" alt="my blog posts"
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	
+	/* Fake image */
+	.fakeimg {
+		background-color: rgb(0, 0, 0);
+		width: 100%;
+		padding: px;
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		 background-color: #f0bf0d;
+		 padding: 20px;
+		 margin-top: 20px;
+		 font-family: monospace;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	/* Footer */
+	.footer {
+		padding: 20px;
+		text-align: center;
+		background: rgb(40, 41, 37);
+		margin-top: 20px;
+		font-weight: 200;
+		font-size: 20px;
+		font-family: monospace;
+	}
+	
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+		.leftcolumn, .rightcolumn {   
+			width: 100%;
+			padding: 0;
+		}
+	}
+	</style>
+	</head>
+	<body>
+	
+	<div class="header">
+		<h2> INTRODUCTION TO JAVASCRIPT</h2>
+	</div>
+	
+	<div class="subheading">
+		<h2>MAY 1, 2022</h2>
+	</div>
+	
+	</div>
+	
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+			</div>
+				<p style="font-size: "medium"><br> 
+					 <h2>	AN ANALOGY TO DESCRIBE JAVASCRIPT AND IT'S RELATIONSHIP TO HTML AND CSS</h2>
+					 <i>People often compare the relationship between JavaScript, HTML and CSS all provide the basis to building a functional website, people compare the use of these 3 tools in conjunction to the process of putting together a house. 
+						 HTML we use to describe the content of the website, or with a house this would be the bare essentails such as structure, doors and rooms. CSS is what we use to style the website (colours, typograhy etc) as you can imagine with a house
+						this would be the paint, the size of a table, chair or doorway. Lastly we have JavaScript which allows users to interact with the website - for example, we would use Javascript to make sure that when we click on a "Make Booking" at a 
+						restaurant we would be able to make a reservation. If we were able to compare this to a house, Java would make sure the lights turn on or the water comes out of the tap. In conclusion all three of these counterparts must work together
+						in order for the website to maximise the potential of the modern web. </i>
+					 <br>
+					 <br>
+					 <br>
+					 <h2>EXPLAIN CONTROL FLOW AND LOOPS USING AN EXAMPLE PROCESS FROM EVERYDAY LIFE</h2>
+					 <br>
+					 <i>We use loops in JavaScript when we want to execute a piece of code over and over again. There are three types of loops in JavaScript a <i>FOR</i> loop, a <i>WHILE</i> loop and <i>do ... while</i> loop. An everyday life example of when 
+						you may interact with a loop would be when you listen to a playlist. While you have another song that's availble to be played from the playist, the loop will keep going through your song list and stop once there is no more music to be played.
+						<br>
+						<br>
+						<br>
+					 <h2>DESCRIBE WHAT THE DOM IS </h2>
+					 <br>
+					 <i>If you were to create a document in Word, the document will be split into numerous sections, these could include a header, a title, a footer, and some paragraphs. There could also be images and graphs included in the document too.
+						The DOM is used to name and catergorize each of these sections. Using HTML, we have agreed on the naming of each section and agreed on how to tag each section. Examples of some of these tags are h2 or div amongst other HTML "tags"
+						When you create this document, you would want to style each section differently. Perhaps the heading should be larger or a different colour , you say. This is what CSS and Javascript do with webpages. They manipulate each section in your HTML.</i> 
+					 <br>
+					 <br>
+					 <h2>EXPLAIN THE DIFFERENCE BETWEEN ACCESSING DATA FROM ARRAYS AND OBJECTS</h2>
+					 <br>
+					 <i> An object is in essence a thing with properties, in addition an array is a collection of objects. Say if you wanted to create your car in code you would need to include things like top speed, accelaration, tyre width and number of seats. 
+						 This could be represented as an object, for example you might decide later on you want to give the car wing doors your object could have such functions/capability e.g open_doors_vertically. If you wanted to use a whole lot cars in a race
+						you would use an array of cars. Arrays are good for storing sequences where the order is important such as different horses and what gate they might come out of in a horse race.  </i>  <br>
+					 <br>
+					 <br>
+					 <h2>EXPLAIN WHAT FUNCTIONS ARE AND WHY THEY ARE HELPFUL.</h2>
+					 <br>
+					 <i> A function is essentailly an agreement to perform a task or a series of tasks whenever you are 'called' upon. The tasks will remain the same, but based on the input the result may differ.
+						  That input is a value that is provided to the function when the function is being called. They are helpful because Functions allow you to define a block of code, catergorize it by name and then execute it as many times as you wish.</i>  <br>
+					 <br>
+					 <br>
+					
+					 <div class="footer">
+						<p>
+						<a href="https://jacktabronexe.github.io/index.html" style="color: rgb(255, 255, 255)">RETURN HOME</a>
+					 </p>				</div>
+		
+				</div>
